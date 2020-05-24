@@ -7,13 +7,13 @@ import NavigationItems from '../../Navigation/NavigationItems/NavigationItems' ;
 const toolbar = props => {
     return(
     <header className={classes.Toolbar}>
-        <div>MENU</div>
+        <div onClick={props.menuClickHandler}>MENU</div>
         <div className={classes.Logo}>
             <Logo></Logo>
         </div>
-        <nv className={classes.DesktopOnly}>
+        <nav className={classes.DesktopOnly}>
             <NavigationItems ></NavigationItems>
-        </nv>
+        </nav>
        
     </header>)
 
